@@ -98,9 +98,9 @@ function onGalleryClick(event) {
 
   const largeImageURL = target.dataset.source;
 
-  const instance = basicLightbox.create(`
+  const modalWindow = basicLightbox.create(`
     <img src="${largeImageURL}" alt="${target.alt}" />
   `);
 
-  instance.show();
+  modalWindow.show();
 }
